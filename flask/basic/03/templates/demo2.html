@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post">
+    {{form.csrf_token}}
+<!--    获取传递过来的form对象的label值-->
+    <p>{{form.user_name.label}}</p>
+<!--    获取传递过来的form对象的name=["user_name"],
+        <input id="user_name" name="user_name"/>
+-->
+    <p>{{form.user_name}}</p>
+<!--    如果验证的时候有多个种错误提示-->
+    {% for msg in form.user_name.errors %}
+        <p>{{msg}}</p>
+    {% endfor %}
+
+    <p>{{form.user_password.label}}</p>
+    <p>{{form.user_password}}</p>
+    {% for msg in form.user_password.errors %}
+        <p>{{msg}}</p>
+    {% endfor %}
+
+    <p>{{form.user_submit}}</p>
+</form>
+</body>
+</html>
