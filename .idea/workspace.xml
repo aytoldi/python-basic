@@ -2,12 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aa8a347c-56b2-41de-a0ae-031a445e78f2" name="Default Changelist" comment="add if">
-      <change afterPath="$PROJECT_DIR$/flask/basic/03/demo1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask/basic/03/demo2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask/basic/03/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask/basic/03/templates/demo1.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flask/basic/03/templates/demo2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class/chapter01/Person.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class/chapter02/Person.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class/chapter03/House.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class/img/oop1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class/img/oop2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/class/img/oop3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extends/chapter01/Animal.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/extends/chapter02/Animal.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask/basic/03/demo2.py" beforeDir="false" afterPath="$PROJECT_DIR$/flask/basic/03/demo2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flask/basic/03/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/flask/basic/03/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,34 +20,36 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/flask/basic/03/demo2.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="431">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flask/basic/03/index.html">
+        <entry file="file://$PROJECT_DIR$/extends/chapter01/Animal.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="161">
-              <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+              <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/flask/basic/03/templates/demo2.html">
+        <entry file="file://$PROJECT_DIR$/extends/chapter02/Animal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="92">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -52,8 +59,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -95,6 +102,15 @@
         <option value="$PROJECT_DIR$/flask/basic/03/index.html" />
         <option value="$PROJECT_DIR$/flask/basic/03/templates/demo2.html" />
         <option value="$PROJECT_DIR$/flask/basic/03/demo2.py" />
+        <option value="$PROJECT_DIR$/class/chapter01/Cat.py" />
+        <option value="$PROJECT_DIR$/class/chapter01/Person.py" />
+        <option value="$PROJECT_DIR$/class/chapter02/Cat.py" />
+        <option value="$PROJECT_DIR$/class/chapter02/Animal.py" />
+        <option value="$PROJECT_DIR$/class/chapter02/Person.py" />
+        <option value="$PROJECT_DIR$/class/chapter03/HouseItem.py" />
+        <option value="$PROJECT_DIR$/class/chapter03/House.py" />
+        <option value="$PROJECT_DIR$/extends/chapter02/Animal.py" />
+        <option value="$PROJECT_DIR$/extends/chapter01/Animal.py" />
       </list>
     </option>
   </component>
@@ -120,36 +136,13 @@
             <path>
               <item name="python-basic" type="b2602c69:ProjectViewProjectNode" />
               <item name="python-basic" type="462c0819:PsiDirectoryNode" />
-              <item name="flask" type="462c0819:PsiDirectoryNode" />
+              <item name="extends" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="python-basic" type="b2602c69:ProjectViewProjectNode" />
               <item name="python-basic" type="462c0819:PsiDirectoryNode" />
-              <item name="flask" type="462c0819:PsiDirectoryNode" />
-              <item name="basic" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python-basic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python-basic" type="462c0819:PsiDirectoryNode" />
-              <item name="flask" type="462c0819:PsiDirectoryNode" />
-              <item name="basic" type="462c0819:PsiDirectoryNode" />
-              <item name="03" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python-basic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python-basic" type="462c0819:PsiDirectoryNode" />
-              <item name="flask" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python-basic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python-basic" type="462c0819:PsiDirectoryNode" />
-              <item name="for_range" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="python-basic" type="b2602c69:ProjectViewProjectNode" />
-              <item name="python-basic" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="extends" type="462c0819:PsiDirectoryNode" />
+              <item name="chapter02" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -168,7 +161,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/extends" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -176,19 +169,20 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\project\python\python-basic\flask\basic\04\img" />
-      <recent name="D:\project\python\python-basic\java\jstl" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\project\python\python-basic\flask\basic\03\templates" />
       <recent name="D:\project\python\python-basic\flask\img\basic" />
       <recent name="D:\project\python\python-basic\flask" />
       <recent name="D:\project\python\python-basic\while\img" />
       <recent name="D:\project\python\python-basic\for_range\img" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\project\python\python-basic\class\img" />
+      <recent name="D:\project\python\python-basic\flask\basic\04\img" />
+      <recent name="D:\project\python\python-basic\java\jstl" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -203,8 +197,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.demo2">
-    <configuration name="demo1 (2)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.Animal">
+    <configuration name="Animal (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python-basic" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -212,12 +206,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flask/basic/02" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/extends/chapter02" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flask/basic/02/demo1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/extends/chapter02/Animal.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -226,7 +220,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="demo1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Animal" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python-basic" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -234,12 +228,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flask/basic/03" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/extends/chapter01" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flask/basic/03/demo1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/extends/chapter01/Animal.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -248,7 +242,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="demo2 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="HouseItem" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python-basic" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -256,12 +250,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flask/basic/04" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/class/chapter03" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flask/basic/04/demo2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/class/chapter03/HouseItem.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -270,7 +264,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="demo2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Person (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python-basic" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -278,12 +272,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flask/basic/03" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/class/chapter01" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flask/basic/03/demo2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/class/chapter01/Person.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -292,7 +286,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="hello" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Person" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python-basic" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -300,12 +294,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/flask/basic/01" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/class/chapter02" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flask/basic/01/hello.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/class/chapter02/Person.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -316,11 +310,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.demo2" />
-        <item itemvalue="Python.demo1" />
-        <item itemvalue="Python.demo1 (2)" />
-        <item itemvalue="Python.demo2 (1)" />
-        <item itemvalue="Python.hello" />
+        <item itemvalue="Python.Animal" />
+        <item itemvalue="Python.Animal (1)" />
+        <item itemvalue="Python.HouseItem" />
+        <item itemvalue="Python.Person (1)" />
+        <item itemvalue="Python.Person" />
       </list>
     </recent_temporary>
   </component>
@@ -364,7 +358,9 @@
       <workItem from="1576511528258" duration="9286000" />
       <workItem from="1576522994625" duration="598000" />
       <workItem from="1576586564161" duration="15869000" />
-      <workItem from="1576677128133" duration="5043000" />
+      <workItem from="1576677128133" duration="5865000" />
+      <workItem from="1576853552957" duration="4057000" />
+      <workItem from="1576906744893" duration="30904000" />
     </task>
     <task id="LOCAL-00001" summary="add if">
       <created>1575733187813</created>
@@ -398,7 +394,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54247000" />
+    <option name="totallyTimeSpent" value="90030000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -411,13 +407,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21709532" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16490166" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.8" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -432,7 +429,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32980332" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14977308" />
@@ -518,56 +515,25 @@
     <state x="390" y="165" key="git4idea.merge.GitPullDialog/0.0.1366.728@0.0.1366.728" timestamp="1575810830740" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/python_basic$demo1__2_.coverage" NAME="demo1 (2) Coverage Results" MODIFIED="1576600080386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask/basic/02" />
     <SUITE FILE_PATH="coverage/python_basic$demo1.coverage" NAME="demo1 Coverage Results" MODIFIED="1576600184762" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask/basic/03" />
-    <SUITE FILE_PATH="coverage/python_basic$demo.coverage" NAME="demo Coverage Results" MODIFIED="1576172699523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask/basic/01" />
-    <SUITE FILE_PATH="coverage/python_basic$demo1__3_.coverage" NAME="demo1 (3) Coverage Results" MODIFIED="1575780987166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/if_else" />
     <SUITE FILE_PATH="coverage/python_basic$hello.coverage" NAME="hello Coverage Results" MODIFIED="1576172813417" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask/basic/01" />
     <SUITE FILE_PATH="coverage/python_basic$demo4.coverage" NAME="demo4 Coverage Results" MODIFIED="1575793547028" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/for_range" />
-    <SUITE FILE_PATH="coverage/python_basic$demo2.coverage" NAME="demo2 Coverage Results" MODIFIED="1576688725580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask/basic/03" />
+    <SUITE FILE_PATH="coverage/python_basic$HouseItem.coverage" NAME="HouseItem Coverage Results" MODIFIED="1576946171855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/class/chapter03" />
+    <SUITE FILE_PATH="coverage/python_basic$Animal__1_.coverage" NAME="Animal (1) Coverage Results" MODIFIED="1576953206350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/extends/chapter02" />
     <SUITE FILE_PATH="coverage/python_basic$demo2__1_.coverage" NAME="demo2 (1) Coverage Results" MODIFIED="1575791255817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/for_range" />
+    <SUITE FILE_PATH="coverage/python_basic$Person__1_.coverage" NAME="Person (1) Coverage Results" MODIFIED="1576916049029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/class/chapter01" />
     <SUITE FILE_PATH="coverage/python_basic$demo1__1_.coverage" NAME="demo1 (1) Coverage Results" MODIFIED="1576172046936" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask/basic/01" />
     <SUITE FILE_PATH="coverage/python_basic$demo3.coverage" NAME="demo3 Coverage Results" MODIFIED="1575793194750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/for_range" />
+    <SUITE FILE_PATH="coverage/python_basic$demo1__2_.coverage" NAME="demo1 (2) Coverage Results" MODIFIED="1576600080386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask/basic/02" />
+    <SUITE FILE_PATH="coverage/python_basic$Person.coverage" NAME="Person Coverage Results" MODIFIED="1576910296280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/class/chapter02" />
+    <SUITE FILE_PATH="coverage/python_basic$Animal.coverage" NAME="Animal Coverage Results" MODIFIED="1576953615731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/extends/chapter01" />
+    <SUITE FILE_PATH="coverage/python_basic$demo.coverage" NAME="demo Coverage Results" MODIFIED="1576172699523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask/basic/01" />
+    <SUITE FILE_PATH="coverage/python_basic$demo1__3_.coverage" NAME="demo1 (3) Coverage Results" MODIFIED="1575780987166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/if_else" />
+    <SUITE FILE_PATH="coverage/python_basic$demo2.coverage" NAME="demo2 Coverage Results" MODIFIED="1576690118381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/flask/basic/03" />
+    <SUITE FILE_PATH="coverage/python_basic$Cat.coverage" NAME="Cat Coverage Results" MODIFIED="1576856382026" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/class/chapter01" />
     <SUITE FILE_PATH="coverage/python_basic$demo1__4_.coverage" NAME="demo1 (4) Coverage Results" MODIFIED="1575787520168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/for_range" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/flask/basic/04/demo3.html" />
-    <entry file="file://$PROJECT_DIR$/flask/img/basic/upload1.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flask/img/basic/upload3.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flask/img/basic/判断请求类型.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/install/iterator.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/install/Snipaste_2019-12-07_20-44-44.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/install/Snipaste_2019-12-07_20-45-08.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/if_else/demo1.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/for_range/demo1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="3" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/if_else/demo2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="10" lean-forward="true" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/flask/basic/04/demo4.py" />
     <entry file="file://$PROJECT_DIR$/flask/basic/04/demo3.py" />
     <entry file="file://$PROJECT_DIR$/flask/basic/04/demo2.py" />
     <entry file="file://$PROJECT_DIR$/flask/basic/04/demo1.py" />
@@ -747,7 +713,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/flask/basic/03/index.html">
+    <entry file="file://$PROJECT_DIR$/flask/basic/03/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
           <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
@@ -763,11 +729,72 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flask/basic/03/demo2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="782">
+          <caret line="34" column="50" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#48#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/chapter02/Animal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/chapter01/Person.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/chapter02/Person.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/chapter03/HouseItem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1224">
+          <caret line="55" column="26" lean-forward="true" selection-end-line="65" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/img/oop3.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/img/oop1.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/img/oop2.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class/chapter03/House.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="50" column="23" lean-forward="true" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/while/img/while.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extends/chapter02/Animal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extends/chapter01/Animal.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
         </state>
       </provider>
     </entry>

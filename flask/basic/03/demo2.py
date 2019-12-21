@@ -40,3 +40,5 @@ def index():
 
 if __name__ == '__main__':
     app.run()
+
+#https://segmentfault.com/a/1190000015228524
