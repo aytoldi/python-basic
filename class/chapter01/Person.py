@@ -1,7 +1,7 @@
 class Person:
 
     # ئاسىتى سىزىق init بولسا ئۇ بىر class نىڭ constructor سى
-    # تىرناق ئىچدىكى self بولسا java دىكى this بىلەن ئوخشاش ، يەنى create قىلغان Object نى كۆرسىتدۇ
+    # تىرناق ئىچدىكى self بولسا java دىكى this بىلەن ئوخشاش ، يەنى create قىلغان قىلغان class نىڭ Object نى كۆرسىتدۇ
     def __init__(self,name):
         self.__name=name
         pass
