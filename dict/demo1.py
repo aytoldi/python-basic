@@ -2,7 +2,7 @@
 # -*- coding:utf-8 -*-
 #@Time  : 2019/12/7 0007 下午 20:38
 #@Author: qaytix
-#@File  : demo.py
+#@File  : demo01.py
 #ئې: dict غا ساقلانغان ئۇچۇرلار object شەكلىدە بولىدۇ {key1:value1,key2:value2}
 
 dict1={"firstName":"java","lastName":"script","version":6};
