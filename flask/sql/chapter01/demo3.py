@@ -33,6 +33,9 @@ class User(db.Model):
     name = db.Column(db.String(64), unique=True, index=True)
     email = db.Column(db.String(64), unique=True)
     pswd = db.Column(db.String(64))
+    """
+        ئەزانىڭ ھۇقۇقىنى بېكتىدىغان خاسلىق ، يەنى ئەزا ئادەتتىكى ئەزااغا تەۋەمۇ ، ئالى ئەزاغا تەۋەمۇ ؟
+    """
     role_id = db.Column(db.Integer, db.ForeignKey('roles.id'))
 
     def __repr__(self):
