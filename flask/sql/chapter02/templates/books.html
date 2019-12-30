@@ -5,6 +5,15 @@
     <title>Title</title>
 </head>
 <body>
+<form method="post">
+    {{ form.csrf_token()}}
+    <p> {{ form.name.label}}    {{ form.name}} </p>
+    <p>{{ form.book.label }}    {{ form.book}} </p>
+    <p>{{ form.submit }}</p>
+    {% for  message in get_flashed_messages() %}
+        <li>{{message}}</li>
+    {% endfor %}
+</form>
     <h3>hello world</h3>
     <ul>
         {% for author in authors %}
