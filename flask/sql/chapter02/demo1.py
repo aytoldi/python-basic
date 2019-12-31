@@ -4,10 +4,9 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_wtf import FlaskForm # extends Flask  form
 from wtforms import StringField,PasswordField,SubmitField
 from wtforms.validators import DataRequired
-
 import sys
-import imp
-imp.reload(sys)
+import importlib
+importlib.reload(sys)
 
 app=Flask(__name__)
 app.config['SECRET_KEY'] = 'A RANDOM STRING'
@@ -17,15 +16,11 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 app.config['SQLALCHEMY_ECHO'] = True
 db=SQLAlchemy(app)
 
-
-
-
 """
     create database book default character set utf8;
     1.创建book数据库
     mysql> create database book;
     Query OK, 1 row affected (0.03 sec)
-    
 """
 
 """
@@ -71,7 +66,6 @@ class Book(db.Model):
     author_id=db.Column(db.Integer,db.ForeignKey("authors.id"))
     pass
 
-
 # 定义一个表单类
 class AuthoForm(FlaskForm):
     #定义表单类使用的属性
@@ -80,7 +74,6 @@ class AuthoForm(FlaskForm):
     submit=SubmitField("提交")
     # يۇقىردىكى خاسلىقلاردىكى قىممەتلەر html بەتتە 解释 بولىدۇ
     pass
-
 
 @app.route("/",methods=["GET","POST"])
 def index():
