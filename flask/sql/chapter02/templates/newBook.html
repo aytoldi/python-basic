@@ -17,10 +17,10 @@
     <hr>
     <ul>
         {% for item in data %}
-            <li>{{item.name}}</li>
+            <li>{{item.name}}  <a href="{{ url_for('delete_author',author_id=item.id) }}">删除Author</a></li>
             <ul>
                 {% for msg in item.myBook %}
-                    <li>{{msg.name}}</li>
+                    <li>{{msg.name}} <a href="{{ url_for('delete_book',book_id=msg.id) }}">删除Book</a></li>
                 {% endfor %}
             </ul>
         {% endfor %}

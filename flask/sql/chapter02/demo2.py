@@ -1,4 +1,4 @@
-from flask import Flask,render_template,request,redirect,flash
+from flask import Flask,render_template,request,redirect,url_for,flash
 from flask_sqlalchemy import SQLAlchemy
 from flask_wtf import FlaskForm
 from wtforms import fields,validators
@@ -40,17 +40,16 @@ def index():
     if form.validate_on_submit():
         #2.ئالدى بەت form دىن ئەۋەتكەن form دىكى سانلىق مىقدارلاغا ئېرىشىش
         getAuthorValue=form.data["autName"];
-        #3.ساندانغا ئاپتۇرنىڭ ئۇچۇرنى قوشۇشتىن ئاۋال ، ئاپتۇرنى سانداننىڭ ئىچدىن تەكشۈرىمەن ، ئەگەر ئاپتۇر ئۇچۇرى بار بولسا True قايتىدۇ ، بولمىسا  False قايتىدۇ
+        #3.ساندانغا ئاپتۇرنىڭ ئۇچۇرنى قوشۇشتىن ئاۋال ، ئاپتۇرنى سانداننىڭ ئىچدىن تەكشۈرىمەن ، ئەگەر ئاپتۇر ئۇچۇرى بار بولسا Object قايتىدۇ ،  table دىكى بىرىنچى قۇر ئۇچۇرغا ئېلىش
         author_obj=Authors.query.filter_by(name=getAuthorValue).first()
         #5.ئەگەر ئاپتۇرنىڭ ئۇچۇرى سانداندا ساقلانغان بولسا
         if author_obj:
             getBookValue = form.data["book"];
-            #سانداندا نۆۋەتتكى كىتاب ساقلانغان بولسا
+            #سانداندا نۆۋەتتكى كىتاب ساقلانغان ، table دىكى بىرىنچى قۇر ئۇچۇرغا ئېلىش
             book_obj=Books.query.filter_by(name=getBookValue).first()
             # 7.كىتابنىڭ سانداندا ساقلانغان ساقلانمىغانلىقغا ھۈكۈم قىلىش
             if book_obj: # كىتاب ساقلانغان بولسا
                 flash("重复数据，book已经存在")
-                pass
             else:
                 #8.نۆۋەتتىكى كىتاب سانداندا يوق ، كىتاب قوشسا بولىدۇ
                 #ئەگەر ساندانغا كىتاب قۇشۇشتا مەسىلە چىقسا قانداق قىلىش كېرەك ؟
@@ -61,7 +60,6 @@ def index():
                 except Exception as e:
                     flash("数据库添加失败")
                     db.session.rollback()
-                pass
         #6.ئاپتۇرنىڭ ئۇچۇرىنى سانداندىن تاپامىغان بولسا ، ئاپتۇرنىڭ ئۇچۇرى ۋە كىتاب ئۇچۇرىنى ساندانغا قوشسۇن
         else:
             try:
@@ -82,13 +80,50 @@ def index():
     else:
        if request.method=="post":
             flash("参数不全")
-            pass
     data=Authors.query.all()
     return  render_template("newBook.html",form=form,data=data)
 
-@app.route('/delete/<book_id>')
-def delete(book_id):
-    return book_id
+@app.route('/delete_book/<book_id>')
+def delete_book(book_id):
+    # ساندانغا ئۈچۈرمەكچى بولغان كىتابنىڭ id سىنى ئەۋەتىمەن ، ساندان ئىزدەپ True قايتۇرسا ،  مەن بىر Object قا ئېرىشمەن
+    book_obj=Books.query.get(book_id)
+    if book_obj:
+        try:
+            # سانداندىن id ئارقىلىق ئىزدەپ تاپقان كىتابنىڭ بارلىق ئۇچۇرىنى ئۈچۈرۋېتىش
+            db.session.delete(book_obj)
+            db.session.commit()
+        except  Exception as e:
+            flash("删除失败")
+            db.session.rollback()
+    else:
+        print("书籍找不到")
+        pass
+    return redirect(url_for("index"))
+
+@app.route('/delete_author/<author_id>')
+def delete_author(author_id):
+    # ساندانغا ئۈچۈرمەكچى بولغان يازغۇچنىڭ id سىنى ئەۋەتىمەن ،  ساندان ئىزدەپ True قايتۇرسا  ،  مەن بىر Object قا ئېرىشمەن
+    author=Authors.query.get(author_id)
+    # يازغۇچنى ئۈچۈرگەندە ئاۋال ، يازغۇچنىڭ كىتابلىرنى ئۈچۈرىمەن ، ئاندىن يازغۇچنىڭ ئۆزىنى ئۈچۈىمەن
+    if author:
+        try:
+            """
+                كىتابنى ئۈچۈرۈش
+            كىتاب  Books نىڭ ئىچدىكى author_id نىڭ قىممىتى author.id غا تەڭ بولغاندىكى كىتابلارنىڭ ھەممىنى سانداندىن ئۈچۈرۈش  
+            """
+            Books.query.filter_by(author_id=author.id).delete()
+            #ئاندىن يازغۇچنى ئۈچۈرۈش 2.
+            db.session.delete(author)
+            db.session.commit()
+        except  Exception as e:
+            flash("删除失败")
+            db.session.rollback()
+    else:
+        print("书籍找不到")
+        pass
+    return redirect(url_for("index"))
+
+
 if __name__ == '__main__':
     db.drop_all()
     db.create_all()
