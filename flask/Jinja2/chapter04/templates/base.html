@@ -1,0 +1,53 @@
+<html>
+<head>
+
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		.container{
+			width: 1000px;
+			margin: auto;
+		}
+		.header{
+			width: 100%;
+			height: 200px;
+			background: pink;
+		}
+
+		.left{
+			width: 250px;
+			height: 600px;
+			background: #FF9900;
+			display: inline-block;
+			margin-right: 30px
+		}
+		.right{
+			width: 700px;
+			height: 600px;
+			background: #ccc;
+			display: inline-block;
+		}
+	</style>
+	{% block create_style %}
+			<title></title>
+	{% endblock %}
+</head>
+<body>
+	<div class="container">
+		<!--通过block 父模板中定义公共模块区域，子模板里面使用extends可以扩展父模板的公共模块区域-->
+		<header class="header">header</header>
+		<aside class="left">
+			{% block section_left %}
+				left
+			{% endblock %}
+		</aside>
+		<article class="right">
+			{% block section_right %}
+				right
+			{% endblock%}
+		</article>
+	</div>
+</body>
+</html>

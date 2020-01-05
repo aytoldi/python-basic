@@ -1,0 +1,17 @@
+<!--通过extends引入扩展的html模板-->
+{% extends("base.html")%}
+<!-- 扩展父模板里面定义的名称是create_style的公共模块区域 -->
+{% block create_style%}
+	<title>index page</title>
+	<style type="text/css">
+		.container .right{
+			background: red;
+		}
+	</style>
+{% endblock %}
+<!-- 扩展父模板里面定义的名称是section_right的公共模块区域 -->
+{% block section_right%}
+	<!--如果子模板想使用父模板中的块里的内容，请使用{{ super() }}。-->
+	{{super()}}
+	new content
+{% endblock %}

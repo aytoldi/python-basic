@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% macro input(type='text',name,value='') %}
+        <input type="{{type}}" name="{{name}}" value="{{value}}">
+    {% endmacro %}
+
+    <form>
+    	<div>
+    		{{input('text','username')}}
+    	</div>
+    	<div>
+    		{{input('text','email')}}
+    	</div>
+    	<div>
+    		{{input('password','password')}}
+    	</div>
+    	<div>
+    		{{input('password','repass')}}
+    	</div>
+    	<div>
+    		{{input('submit','sub','submit')}}
+    	</div>
+    </form>
+</body>
+</html>

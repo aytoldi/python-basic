@@ -10,10 +10,10 @@ def index():
             "one":1.1,
             "two":1.5
         },
-        "functionDevice":["orm","template","form"]
+        "functionDevice":["orm","Jinja2","form"]
     }
     # ** 扩展运算符 ， نىڭ تىرناق نى ئۈچۈرۈپ ، ئېلمىنتلارنى كېڭەيدىغان ھالەتكە ئۆزگەرتىش object
-    return render_template("demo2.html",**obj)
+    return render_template("home.html",**obj)
 
 if __name__ == '__main__':
     app.run()

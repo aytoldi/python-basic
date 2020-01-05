@@ -32,7 +32,7 @@ def login():
         password=form.user_password.data
         return redirect("index")
 
-    return render_template("demo2.html",form=form)
+    return render_template("home.html",form=form)
 
 @app.route("/index")
 def index():
