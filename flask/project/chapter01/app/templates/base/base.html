@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <!--    父模板中定义子模版扩展的title模块-->
+    {%block title%}
+         <!--其它页面的title文件-->
+        <title>base</title>
+    {%endblock%}
+      {% block extracss%}
+        <!--其它页面的css文件-->
+    {%endblock%}
+     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="{{url_for('static',filename='bootstrap/css/bootstrap.css',_external=True)}}">
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+<link rel="stylesheet" href="{{url_for('static',filename='bootstrap/css/bootstrap-theme.css',_external=True)}}">
+<link rel="stylesheet" href="{{url_for('static',filename='css/dashboard.css',_external=True)}}">
+</head>
+<body>
+ {% block header %}
+        {% include("base/header.html") %}
+    {% endblock %}
+        <div class="container-fluid">
+        <!--    父模板中定义子模版扩展的container模块-->
+        {% block container %}
+          <div class="row">
+            <div class="col-sm-3 col-md-2 sidebar">
+                <!--  父模板中定义子模版扩展的sidebar模块 -->
+              {% block sidebar %}
+                <!--左侧菜单-->
+                {% include("base/sidebar.html") %}
+              {% endblock %}
+            </div>
+            <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+                <!--  父模板中定义子模版扩展的content模块 -->
+                {% block content %}
+                  <!--content-->
+                {% endblock %}
+            </div>
+          </div>
+        {% endblock %}
+    </div>
+<script src="{{url_for('static',filename='js/jquery.js',_external=True)}}"></script>
+<script src="{{url_for('static',filename='bootstrap/js/bootstrap.js',_external=True)}}"></script>
+      {% block extrajs%}
+        <!--其它页面的css文件-->
+    {%endblock%}
+</body>
+</html>
+

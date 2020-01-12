@@ -1,0 +1,83 @@
+{% extends("base/base.html")%}
+
+{%block content%}
+    <h1>新增商品</h1>
+<form action="{{url_for('product_add')}}" method="post" enctype="multipart/form-data">
+    {{ form.csrf_token()}}
+        <!--商品标题-->
+        <div class="form-group">
+            {{form.title.label}}
+            {{form.title}}
+        </div>
+        <!--描述-->
+        <div class="form-group">
+            {{form.content.label}}
+            {{form.content}}
+        </div>
+        <!--商品推荐语-->
+        <div class="form-group">
+            {{form.recommend.label}}
+            {{form.recommend}}
+        </div>
+        <!--类型-->
+        <div class="form-group">
+            {{form.types.label}}
+            {{form.types}}
+        </div>
+        <!--价格-->
+        <div class="form-group">
+            {{form.price.label}}
+            {{form.price}}
+        </div>
+        <!--原价-->
+        <div class="form-group">
+            {{form.origin_price.label}}
+            {{form.origin_price}}
+        </div>
+        <!--商品图片-->
+        <div class="form-group">
+            {{form.img.label}}
+            {{form.img}}
+        </div>
+        <!--商品链接-->
+        <div class="form-group">
+            {{form.link.label}}
+            {{form.link}}
+        </div>
+        <!--商品状态-->
+        <div class="form-group">
+            {{form.status.label}}
+            {{form.status}}
+        </div>
+        <!--库存-->
+        <div class="form-group">
+            {{form.sku_count.label}}
+            {{form.sku_count}}
+        </div>
+        <!-- 剩余库存-->
+        <div class="form-group">
+            {{form.remain_count.label}}
+            {{form.remain_count}}
+        </div>
+        <!--访问次数-->
+        <div class="form-group">
+            {{form.view_count.label}}
+            {{form.view_count}}
+        </div>
+        <!--评分-->
+        <div class="form-group">
+            {{form.score.label}}
+            {{form.score}}
+        </div>
+        <!--逻辑删除-->
+        <div class="form-group">
+            {{form.is_valid.label}}
+            {{form.is_valid}}
+        </div>
+        <!--排序-->
+        <div class="form-group">
+            {{form.reorder.label}}
+            {{form.reorder}}
+        </div>
+</form>
+{%endblock%}

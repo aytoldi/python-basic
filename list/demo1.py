@@ -12,7 +12,7 @@ list1=["hello","world"];
 list1[0]="_hello";#چەكلىمسىز ئۆزگەرتىش
 first=list1[0];# ئې: list نىڭ ئىچىدىكى نۆلىنچى ئىندىكىستىكى قىممەتكە ئېرىشىش
 print(first);
-list2=["java","javascript","html5","python","css","jquery","vue","react"];
+list2=["java","javascript","html5","python","css","js","vue","react"];
 center=list2[0:4];# ئې: نۆلىنچى ئۇرۇندىن تۆتىنچى ئۇرۇنغىچە بولغان قىممەتكە ئېرىشىش ، تۆتىنچى ئۇرۇندىكى قىممەتنى ئالمايدۇ
 print(center);
 list3=["java","javascript"];

@@ -7,10 +7,10 @@ import sys
 import importlib
 importlib.reload(sys)
 
-app=Flask(__name__)
-app.config['SECRET_KEY'] = 'hello'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:root@127.0.0.1:3303/book'
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.config['SECRET_KEY'] = 'A RANDOM STRING'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:root@127.0.0.1:3303/book?charset=utf8'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
+app.config['SQLALCHEMY_ECHO'] = True
 db=SQLAlchemy(app)
 
 class Authors(db.Model):
