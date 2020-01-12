@@ -71,13 +71,19 @@
         </div>
         <!--逻辑删除-->
         <div class="form-group">
-            {{form.is_valid.label}}
-            {{form.is_valid}}
+           {{form.is_valid.label}}
+           {{form.is_valid}}
         </div>
         <!--排序-->
         <div class="form-group">
             {{form.reorder.label}}
             {{form.reorder}}
         </div>
+         <div class="form-group">
+            {{form.submit}}
+        </div>
+     {% for  message in get_flashed_messages() %}
+        <div class="alert-danger">{{message}}</div>
+    {% endfor %}
 </form>
 {%endblock%}

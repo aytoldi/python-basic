@@ -2,7 +2,7 @@
 import importlib
 import sys
 
-from flask import Flask, render_template,flash
+from flask import Flask, render_template,flash,redirect,url_for
 from flask_sqlalchemy import SQLAlchemy
 from flask_wtf import FlaskForm
 from wtforms import fields
@@ -37,9 +37,10 @@ class ProductAddForm(FlaskForm):
     # 评分
     score = fields.IntegerField(label="评分",render_kw={"class":"form-control","placeholder":""})
     # 逻辑删除
-    is_valid =fields.BooleanField(label="逻辑删除",render_kw={"class":"form-control","placeholder":""})
+    is_valid =fields.BooleanField(label="逻辑删除")
     # 排序
     reorder = fields.IntegerField(label="排序",render_kw={"class":"form-control","placeholder":""})
+    submit = fields.SubmitField('submit',render_kw={"class":"btn btn-primary"})
 pass
 
 """
@@ -171,9 +172,45 @@ def product_add():
     form=ProductAddForm()
     if form.validate_on_submit():
         #把数据保存数据库
+        product_item=form.data
+        title = product_item['title']# 商品标题
+        content = product_item['content']# 描述
+        recommend = product_item['recommend']# 商品推荐语
+        types =product_item['types']# 类型
+        price =product_item['price']# 价格
+        origin_price =product_item['origin_price']# 原价
+        img =product_item['img']# 商品图片
+        link =product_item['link']# 商品链接
+        status =product_item['status']# 商品状态
+        sku_count =product_item['sku_count']# 库存
+        remain_count =product_item['remain_count']# 剩余库存
+        view_count =product_item['view_count']# 访问次数 visits
+        score =product_item['score']# 评分
+        is_valid =product_item['is_valid']# 逻辑删除
+        reorder =product_item['reorder ']# 排序
+        product_obj=Product(title,
+                            content=content,
+                            recommend=recommend ,
+                            types=types,
+                            price=price,
+                            origin_price=origin_price,
+                            # img=img ,
+                            link=link,
+                            status=status ,
+                            sku_count=sku_count ,
+                            remain_count=remain_count,
+                            view_count=view_count,
+                            score=score,
+                            is_valid=is_valid,
+                            reorder=reorder
+                            )
+        db.session.add(product_obj)
+        db.session.commit()
+
 
         #消息提示
         flash("新增成功","success")
+        return redirect(url_for("index"))
         pass
     else:
         flash("请修改页面中的错误，然后提交","warning")
